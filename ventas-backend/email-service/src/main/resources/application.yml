@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: email-service
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ventas.pymes25@gmail.com
+    password: jxfz zgpa yikp ahmt
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+
+  kafka:
+    consumer:
+      group-id: email-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      auto-offset-reset: earliest
+    listener:
+      ack-mode: record

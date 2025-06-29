@@ -1,0 +1,49 @@
+{
+  "productos": [
+    {
+      "id": "a1aa",
+      "name": "T-shirt",
+      "description": "Camiseta cómoda de algodón",
+      "price": 29.99,
+      "categories": ["ropa", "moda"],
+      "images": [
+        "https://example.com/tshirt.jpg"
+      ],
+      "available": true,
+      "promotion": "summer-sale",
+      "stock": 100,
+      "pyme_id": "pyme1"
+    },
+    {
+      "id": "b2bb",
+      "name": "Sneakers",
+      "description": "Zapatillas deportivas ligeras",
+      "price": 59.99,
+      "category": ["calzado", "deportes"],
+      "images": [
+        "https://example.com/sneakers.jpg"
+      ],
+      "available": true,
+      "promotion": null,
+      "stock": 50,
+      "pyme_id": "pyme2"
+    }
+  ],
+  "categories": [
+    {
+      "category_id": "cat1",
+      "name": "Ropa",
+      "description": "Prendas de vestir"
+    },
+    {
+      "category_id": "cat2",
+      "name": "Calzado",
+      "description": "Zapatos y zapatillas"
+    },
+    {
+      "category_id": "cat3",
+      "name": "Electrónica",
+      "description": "Dispositivos electrónicos"
+    }
+  ]
+}

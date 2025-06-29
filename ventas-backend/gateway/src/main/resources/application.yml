@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      routes:
+        - id: ventas-back
+          uri: lb://ventas-back
+          predicates:
+            - Path=/api/public/basic/**, /api/private/basic/**
+        - id: authentication-service
+          uri: lb://authentication-service
+          predicates:
+            - Path=/api/public/auth/**, /api/private/auth/**
+
+jwt:
+  secret: KXiUPknkoVDCHdNrrYnxmA5oQLbv+LE7eHG8vkk71fjEPq0lmlZKwBhUVLUqKSmGam8P4kWxXKTGCDRgpZ5BMA==

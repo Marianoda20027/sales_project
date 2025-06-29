@@ -1,0 +1,23 @@
+/* Home.css */
+
+.search-bar {
+  min-width: 280px;
+  max-width: 350px;
+}
+
+.product-card img {
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.03);
+}
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 5px 0; /* El footer es delgado */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
